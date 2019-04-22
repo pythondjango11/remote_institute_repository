@@ -30,8 +30,8 @@ def ContactView(request):
             data.save()
             cform = ContactForm()
             return render(request, 'institute_contact.html', {'cform': cform})
-        else:
-            return HttpResponse("enter all fields")
+        #else:
+            #return HttpResponse("enter all fields")
 
     else:
         cform=ContactForm()
